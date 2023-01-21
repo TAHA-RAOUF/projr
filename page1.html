@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My E-commerce Store</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../MOHAMED TAHA RAOUF102/monstyle.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li id="myElement"><a href="#">Home</a></li>
+        
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to My E-commerce Store</h1>
+    <section id="featured-products">
+      <h2>Featured Products</h2>
+      <ul>
+        <li>
+          <h3>Product 1</h3>
+          <img src="product1.jpg" alt="Product 1">
+          <p>$20.00</p>
+          <button>Add to Cart</button>
+        </li>
+        <li>
+          <h3>Product 2</h3>
+          <img src="product2.jpg" alt="Product 2">
+          <p>$30.00</p>
+          <button>Add to Cart</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; My E-commerce Store</p>
+  </footer>
+  <script>
+    // Récupération de l'élément à animer
+var element = document.getElementById("myElement");
+
+// Position initiale de l'élément
+var xPos = 0;
+
+// Intervalle de temps de l'animation en ms
+var interval = 50;
+
+// Vitesse de déplacement de l'élément en pixels par intervalle
+var speed = 5;
+
+// Démarrage de l'animation
+setInterval(function() {
+    // Mise à jour de la position de l'élément
+    xPos += speed;
+    element.style.left = xPos + "px";
+}, interval);
+
+  </script>
+</body>
+</html>
